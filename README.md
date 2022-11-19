@@ -36,3 +36,24 @@ approaches on Social Network](http://alumni.media.mit.edu/~pernghwa/papers/IR_fi
 [Библиотека natasha для извлечения именованных сущностей. Внимание! Для работы алгоритма имена, локации и прочее должны быть с заглавной буквы](https://github.com/natasha/natasha)
 
 [Ноутбук пример тематического моделирования и визуализации LDA](https://nbviewer.org/github/bmabey/hacker_news_topic_modelling/blob/master/HN%20Topic%20Model%20Talk.ipynb)
+
+
+## Приложения
+[Новости с фонтанки](https://drive.google.com/drive/folders/109_YyJ2iYDLpOEM47iAww8aNgi_H8daN?usp=share_link).
+
+Файлы разбиты на 3 строчки:
+- категории
+- заголовок
+- текст
+
+<details>
+<summary>Как использовать</summary>
+
+```
+import glob
+from google.colab import drive
+drive.mount('/content/drive')
+news = glob.glob(f"path/to/directory/with/news/*.txt")
+```
+В `news` будут лежать пути к необходимым файлам
+</details>
